@@ -1,4 +1,4 @@
-import faker from 'faker';
+import faker from "faker";
 
 export class User {
   name: string;
@@ -15,4 +15,7 @@ export class User {
     };
   }
 
+  public markerContent(): string {
+    return `User Name: ${this.name}`;
+  }
 }
